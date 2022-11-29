@@ -25,7 +25,11 @@ chave_valor = [
     },
 ]
 
+flag = 0
+
 verify_pasta_output()
 for aluno in chave_valor:
-    gera_documento("template.md", aluno, "NOME_MATRICULA", 1)
-clean_dir_md()    
+    gera_documento("template.md", aluno, "NOME_MATRICULA", 0)
+
+if flag == 1:
+    clean_dir_md()
