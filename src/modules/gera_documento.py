@@ -1,45 +1,13 @@
 # Importando bibliotecas
-import docx
-from docx.text.paragraph import Paragraph
-
-from docx2pdf import convert
-
 import re
 import unicodedata
+import os
 
 
-def loc_e_substitui(chave: str, valor:str, paragrafo: Paragraph):
-    regex = re.compile(f"<<{chave}>>")
-    is_match = False
-    while True:
-        text = paragrafo.text
-        match = regex.search(text)
-        if not match:
-            break
-        is_match=True
-        runs = iter(paragrafo.runs)
-        start, end = match.start(), match.end()
-
-        for run in runs:
-            run_len = len(run.text)
-            if start < run_len:
-                break
-            start, end = start - run_len, end - run_len
-
-        run_text = run.text
-        run_len = len(run_text)
-        run.text = "%s%s%s" % (run_text[:start], valor, run_text[end:])
-        end -= run_len
-
-        for run in runs:
-            if end <= 0:
-                break
-            run_text = run.text
-            run_len = len(run_text)
-            run.text = run_text[end:]
-            end -= run_len
-
-    return is_match
+def loc_sub(text, chave, valor):
+    pattern = f"<<{chave}>>"
+    text = re.sub(pattern, valor, text)
+    return text
 
 def slugify(value, allow_unicode=False):
     """
@@ -66,11 +34,14 @@ def identifica_nome_arquivo(chave_valor: str, chave_nome_arquivo:str):
 
 def gera_documento(diretorio_template: str, chave_valor: dict, chave_nome_arquivo: str, flag: int=1):
 
-    doc = docx.Document(diretorio_template)
-    for chave in chave_valor.keys():
-        for paragraph in doc.paragraphs:
-            loc_e_substitui(chave, chave_valor[chave], paragraph)
+    with open(diretorio_template, "r", encoding="utf-8") as input_file:
+        text = input_file.read()
+        input_file.close()
     filename = identifica_nome_arquivo(chave_valor, chave_nome_arquivo)
-    doc.save(f"output/{filename}.docx")
-    if(flag == 1):
-        convert(f"output/{filename}.docx", f"output/{filename}.pdf")
+    with open(f"./output/{filename}.md", "w+", encoding="utf-8") as input_file:
+        for chave in chave_valor.keys():
+            text = loc_sub(text, chave, chave_valor[chave])
+        input_file.write(text)
+    if flag == 1:
+        os.system(f"mdpdf -o ./output/{filename}.pdf ./output/{filename}.md")
+

@@ -1,4 +1,4 @@
-from modules.gera_documento import gera_documento, identifica_nome_arquivo
+from modules.gera_documento import gera_documento
 from modules.utils import *
 
 chave_valor = [
@@ -27,5 +27,5 @@ chave_valor = [
 
 verify_pasta_output()
 for aluno in chave_valor:
-    gera_documento("../template.docx", aluno, "NOME_MATRICULA", 1)
-clean_dir_docx()
+    gera_documento("template.md", aluno, "NOME_MATRICULA", 1)
+clean_dir_md()    

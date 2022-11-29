@@ -1,0 +1,11 @@
+    INFO: 2022-11-29 11:17:03,510:               log.py:   20: Logging to C:\Users\VAIO\Documents\UnB\6 Semestre\MDS\2022-2-Squad07\mdpdf.log
+   DEBUG: 2022-11-29 11:17:03,511:               cli.py:  103: ./output/bruno_2565865865.md
+    INFO: 2022-11-29 11:17:03,511:         converter.py:   14: ./output/bruno_2565865865.md
+   DEBUG: 2022-11-29 11:17:03,517:      pdf_renderer.py:  470: printSegment: Olá pessoal
+   DEBUG: 2022-11-29 11:17:03,519:      pdf_renderer.py:  470: printSegment: Fiquei sabendo que o Vasco é o gigante
+   DEBUG: 2022-11-29 11:17:03,520:      pdf_renderer.py:  470: printSegment: Meu nome é Bruno, declaro que estou ciente, a partir desta situação, de que o Vasco é gigante, declaro ciência na
+   DEBUG: 2022-11-29 11:17:03,521:      pdf_renderer.py:  470: printSegment: universidade de que o nosso timão é gigante. Salve para a Métodos de desenvolvimento de software
+   DEBUG: 2022-11-29 11:17:03,521:      pdf_renderer.py:  470: printSegment: Brasília, 24 de Novembro de 2022
+   DEBUG: 2022-11-29 11:17:03,521:      pdf_renderer.py:  470: printSegment: 666.888.999-88 // 2565865865
+   DEBUG: 2022-11-29 11:17:03,522:      pdf_renderer.py:   53: 0, [1, 'Olá pessoal', 1, 68.0]
+   DEBUG: 2022-11-29 11:17:03,522:      pdf_renderer.py:   53: 1, [2, 'Fiquei sabendo que o Vasco é o gigante', 1, 106.0]

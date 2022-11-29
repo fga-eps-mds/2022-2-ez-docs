@@ -2,7 +2,7 @@ import os
 import glob
 
 def verify_pasta_output():
-    path = './output'
+    path = 'output/'
     # Check whether the specified path exists or not
     isExist = os.path.exists(path)
 
@@ -10,9 +10,9 @@ def verify_pasta_output():
     # Create a new directory because it does not exist 
         os.makedirs(path)
 
-def clean_dir_docx():
+def clean_dir_md():
     target_folder = 'output/'
-    target_extension = 'docx'
+    target_extension = 'md'
 
     target_filenames = glob.glob(target_folder + '*.' + target_extension)
 
