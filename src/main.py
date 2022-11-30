@@ -26,8 +26,7 @@ from modules.trata_dados import filter_data
 #     },
 # ]
 
-chave_valor = filter_data("../random_data.csv")
-
+chave_valor = filter_data("../random.csv")
 flag = 0
 
 verify_pasta_output()
