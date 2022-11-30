@@ -2,10 +2,8 @@
 
 ## Fiquei sabendo que o Vasco é o gigante
 
-Meu nome é <<NOME>>, declaro que estou ciente, a partir desta situação, de que o Vasco é gigante, declaro ciência na universidade de que o nosso timão é gigante. Salve para a <<DISCIPLINA>>
+Eu, <<NOME>>, aluno da matrícula <<MATRICULA>>, declaro que estou ciente, a partir desta situação, de que o Vasco é GIGANTE. Declaro ciência na universidade de que o nosso timão é GIGANTE. Salve para a discipla de <<DISCIPLINA>>!
 
----
 
-Brasília, <<DATA>>
-
-<<CPF>> // <<MATRICULA>>
+<<EMAIL>>
+<<GITPAGE>>
