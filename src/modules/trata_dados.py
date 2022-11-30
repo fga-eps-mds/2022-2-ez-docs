@@ -18,6 +18,6 @@ def filter_data(dataSet):
     for line in range(len(startData)):
         finalData.append({})
         for col in list(startData.columns):
-            finalData[line][col] = startData.iloc[line][col]
+            finalData[line][col] = str(startData.iloc[line][col])
     
     return finalData
