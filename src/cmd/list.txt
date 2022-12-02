@@ -1,0 +1,6 @@
+Lista de comandos:
+
+--about		Informações gerais sobre o projeto, contribuidores, etc;
+--architecture	Documentação relativa à arquitetura;
+--help		Tutorial de como utilizar o framework;
+--list		Lista de comandos existentes;
