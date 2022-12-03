@@ -1,0 +1,6 @@
+Como utilizar o mkcert
+
+1. Esteja com seus arquivos de template e dataset preparados e nas extensões corretas.
+2. ?
+3. ?
+4. Os arquivos de saída estarão na pasta output. Aproveite!

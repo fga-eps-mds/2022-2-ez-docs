@@ -8,8 +8,8 @@ Lucas Gobbi Bergholz (https://github.com/LucasBergholz);
 Rafael de Medeiros Nobre (https://github.com/RafaelN0bre);
 
 	O intuito geral da disciplina foi aprender e apronfundar-se sobre os diferentes tipos de abordagens existentes para criação de softwares por intermédio das práticas ágeis. As mais utilizadas foram o Scrum e o Extreme Programming (XP).
-	Assim, contribuimos para o sociedade de softwares livres com esse pequeno e útil projeto, chamado ****, que auxilia usuários a emitir em larga escala uma gama de certificados, declarações, currículos, recibos, boletos, e o que mais a imaginação permitir através de uma database e um template no formato markdown.
+	Assim, contribuimos para o sociedade de softwares livres com esse pequeno e útil projeto, chamado mkcert, que auxilia usuários a emitir em larga escala uma gama de certificados, declarações, currículos, recibos, boletos, e o que mais a imaginação permitir através de uma database e um template no formato markdown.
 	Gostaríamos de expressar nossa gratidão à prof. Carla e a todos os que nos aconselharam de alguma forma durante esta jornada.
-	Ficaríamos bastante gratos se você quiser contribuir conosco!
 	
-	“No matter the circumstance you can always improve. You can always start improving with yourself. You can always start improving today.” ― Kent Beck
+	Ficaríamos bastante gratos se você quiser contribuir conosco!
+	“No matter the circumstance you can always improve. You can always start improving with yourself. You can always start improving today.” ― Kent Beck, creator of XP.

@@ -2,18 +2,35 @@ Arquitetura
 
 1. Módulo da geração de documentos
 	
-	Incumbido de criar e manipular os arquivos. Detém as funcionalidades de ler um determinado template no formato markdown, identificar suas chaves no formato padrão <<CHAVE>>, e em seguida, substituí-las pelos respectivos campos do dataset em consonância com o formato especificado abaixo:
-		
-	...
+	Incumbido de criar e manipular os arquivos. Detém as funcionalidades de ler um determinado template no formato .md, identificar suas chaves no formato padrão <<KEY>>, e em seguida, substituí-las pelos respectivos campos do dataset.
+	Na sequência, gerar o documento em formato pdf e disponibilizá-lo no diretório padrão /output/.
+	Este módulo opera com apenas um conjunto de dados, isto é, para um objeto, ele retorna apenas 1 documento, tendo como saída principal o método doc_generator().
+	Entradas:
+	--> directory_template: str - diretório do template .md
 	
-	Na sequência, gerará o documento em formato pdf e irá disponibilizá-lo no diretório padrão output.
-	Este módulo opera com apenas um conjunto de dados, isto é, para um objeto, ele retorna apenas 1 documento.
-	Este módulo tem como saída principal o método gera_documento().	
+	--> key_name_file: str - parâmetro concernente à chave denominadora do nome do documento, devendo seguir o formato {nome_chave}. Por exemplo, para um template que possua as chaves "nome" e "matricula", então a saída poderia ser "nome_matricula", gerando os seguintes resultados:
+Alberto_314159265.pdf
+Rogerinho_2718281828.pdf 
+Separadores válidos: nome_matricula, nome-matricula, nome matricula, nome matricula;
+
+	--> flag: int - parâmetro opcional que define o formato final de saída.
+	1 (def.) - o doc será convertido para .pdf;
+	2 - O doc permanecerá em .md.
 	
+	--> key_value: dict - dicionário com todas as chaves e seus respectivos valores, já extraídos do módulo que tratará os dados.
+	Formato:
+{
+	"field 1": "value 1",
+	"field 2": "value 2",
+	... : ...,
+	"field n": "value n"
+},		
+	
+	As chaves possuem caráter arbitrário, o que significa que seus nomes, quantidades e repetições são incertas. Todas serão buscadas dentro do template: as encontradas serão substituídas pelo valor correspondente, e as que não forem, serão indicadas no terminal via warning.
 
 2. Módulo de tratamento de dados
 
-	Responsável pela extração e filtragem do dataset a partir do path especificado pelo usuário. Aceita os seguintes formatos: csv, excel, html, blablabla.
+	Responsável pela extração e filtragem do dataset a partir do path especificado pelo usuário. Aceita os seguintes formatos: csv, html, json, xlsx, xml.
 1) Limpeza de linhas incompletas;
 2) Remoção de duplicatas;
 3) Conversão para o formato requerido no módulo da geração de documentos;
@@ -21,10 +38,10 @@ Arquitetura
 3. Módulo do envio de emails
 
 	Administração do envio de emails pelo usuário por meio do endereço de email. Para tanto, o nome da coluna padrão deverá ser "email", caso contrário, o usuário deverá informar qual é a coluna designada para tal.
-	Este módulo será invocado dentro do método gera_documentos(), realizando o envio do email, junto com o respectivo documento, para fins de assinatura ou emissão de declaração, por exemplo.
+	Este módulo será invocado dentro do método doc_generator(), realizando o envio do email, junto com o respectivo documento, para fins de assinatura ou emissão de declaração, por exemplo.
 	Possui valor padrão FALSO, o que significa que o usuário deverá informar se deseja ou não enviar os arquivo para os emails.
 	
 4. Módulo gerador de documentos
 
 	Este é o módulo final, chamado ao inserir o código CLI no terminal (main).
-	
+
