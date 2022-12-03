@@ -1,7 +1,6 @@
 import os
 import glob
 
-
 def verify_folder_output():
     # Check whether the specified path exists or not
     path = 'output/'
