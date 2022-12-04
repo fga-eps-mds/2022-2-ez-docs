@@ -2,7 +2,6 @@
 
 **2022-2-Squad7**
 
-<igm src="mkdocs_logo.png">
 
 ## Product Backlog
 
@@ -36,11 +35,11 @@
 | E06       | FT10        | US13   | As a user, I wish t access the documentation trough CLI with --help flag                                                 |
 
 
-## 💻 Prerequisites
+## Prerequisites
 
 Before starting, make sure you've met the following requirements:
 * You have installed the latest version of `<Python>`.
-* You have a `<Windows / Linux / Mac>`.
+* You have a `<Windows / Linux / Mac>` machine.
 * You read [project gitpage](https://google.com).
 
 
@@ -59,7 +58,7 @@ To start using *mkdocs*, open an interactive shell and run the following steps:
 ```
 
 
-## 📫 Getting involved
+## Getting involved
 1. Read the [CONTRIBUTING.md]() guide.
 2. Fork this repository.
 3. Create a brach on your local machine: `git checkout -b <brach_name>`.
@@ -72,7 +71,8 @@ To start using *mkdocs*, open an interactive shell and run the following steps:
 
 This project is under license. See the [LICENSE](https://github.com/fga-eps-mds/2022-2-Squad07/blob/readme/LICENSE) file for details.
 
-[⬆ Back to top](#mkdocs)<br>
-
 
 *Created by [Bruno Ribeiro](https://github.com/BrunoRiibeiro), [Bruno Martins](https://github.com/gitbmvb), [Diógenes Dantas](https://github.com/diogjunior100), [Igor Penha](https://github.com/igorpenhaa), [Lucas Bergholz](https://github.com/LucasBergholz) and [Rafael Nobre](https://github.com/RafaelN0bre) in 2022*
+
+
+[⬆ Back to top](#mkdocs)<br>
