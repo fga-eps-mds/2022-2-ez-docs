@@ -326,51 +326,16 @@ a:focus {
   z-index: 2;
 }
 
+.slider_section h1{
+  color: #46c5eb;
+  font-weight: bold;
+  font-size: 70px;
+}
+
 .slider_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.slider_section .detail-box h1 {
-  color: #30f7fe;
-  font-weight: bold;
-  font-size: 4rem;
-}
-
-.slider_section .detail-box h4 {
-  font-weight: bold;
-}
-
-.slider_section .detail-box p {
-  margin-top: 25px;
-}
-
-.slider_section .detail-box .btn-box {
-  margin-top: 45px;
-}
-
-.slider_section .detail-box .btn-box a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.slider_section .detail-box .btn-box a span {
-  color: #ffffff;
-  margin-right: 5px;
-  font-size: 18px;
-}
-
-.slider_section .detail-box .btn-box a hr {
-  width: 35px;
-  height: 1px;
-  background-color: #ffffff;
-  margin: 0;
-  border: none;
 }
 
 .slider_section .img-box {
@@ -391,6 +356,23 @@ a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 15px;
+  flex-direction: column;
+}
+
+.service_text{
+  margin-top: 30px;
+}
+
+.code_text{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #060606;
+  margin: auto;
+  padding-top: 1%;
+  height: 40px;
+  width: 400px;
+  background-color: #46c5eb;
 }
 
 .service_section .heading_container h2::before {
@@ -516,8 +498,6 @@ a:focus {
 
 .team_section .box .img-box {
   position: relative;
-  background-color: #582fd7;
-  border-radius: 30px;
   padding: 35px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,7 +511,8 @@ a:focus {
 }
 
 .team_section .box .img-box img {
-  width: 75%;
+  width: 100%;
+  border: 2px solid #000000;
 }
 
 .team_section .box .detail-box {
