@@ -9,7 +9,7 @@ Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approacha
 #### **Did you find a bug?**
 
 * **Do not open up a GitHub issue if the bug is a security vulnerability
- in mkdocs**, and instead to refer to our [security policy](./SECURITY_POLICY.md).
+ in mkdocs**, and instead to refer to our [security policy](./SECURITY.md).
 
 * **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/fga-eps-mds/2022-2-Squad07/issues).
 
@@ -27,6 +27,4 @@ Changes that are cosmetic in nature and do not add anything substantial to the s
 
 mkdocs is a volunteer effort. We encourage you to pitch in and join the team!
 
-Thanks!
-
-*mkdocs Team*
+Thanks! - *mkdocs Team* -
