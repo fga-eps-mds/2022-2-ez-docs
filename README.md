@@ -2,6 +2,8 @@
 
 **2022-2-Squad7**
 
+<igm src="mkdocs_logo.png">
+
 ## Product Backlog
 
 ### Epics
@@ -71,3 +73,6 @@ To start using *mkdocs*, open an interactive shell and run the following steps:
 This project is under license. See the [LICENSE](https://github.com/fga-eps-mds/2022-2-Squad07/blob/readme/LICENSE) file for details.
 
 [⬆ Back to top](#mkdocs)<br>
+
+
+*Created by [Bruno Ribeiro](https://github.com/BrunoRiibeiro), [Bruno Martins](https://github.com/gitbmvb), [Diógenes Dantas](https://github.com/diogjunior100), [Igor Penha](https://github.com/igorpenhaa), [Lucas Bergholz](https://github.com/LucasBergholz) and [Rafael Nobre](https://github.com/RafaelN0bre) in 2022*
