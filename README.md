@@ -1,6 +1,8 @@
+# mkdocs
+
 **2022-2-Squad7**
 
-## Backlog do produto
+## Product Backlog
 
 ### Épicos
 
@@ -30,3 +32,42 @@
 | E05       | FT09        | US11   | Como usuário, desejo ter uma página, onde consigo ter informações, tutoriais e documentação do projeto            |
 | E06       | FT10        | US12   | Como usuário, desejo ter documentação disponível para uso da ferramenta                                           |
 | E06       | FT10        | US13   | Como usuário, desejo acessar documentação via CLI com flag --help                                                 |
+
+
+## 💻 Prerequisites
+
+Before starting, make sure you've met the following requirements:
+* You have installed the latest version of `<Python>`.
+* You have a `<Windows / Linux / Mac>`.
+* You read [project gitpage](https://google.com).
+
+
+## Installation
+
+To install *mkdocs* on Linux or MacOS, open an interactive shell and run:
+```
+python<version> -m pip install mkdocs
+```
+
+## Using mkdocs
+
+To start using *mkdocs*, open an interactive shell and run the following steps:
+```
+...
+```
+
+
+## 📫 Getting involved
+1. Read the [CONTRIBUTING.md]() guide.
+2. Fork this repository.
+3. Create a brach on your local machine: `git checkout -b <brach_name>`.
+4. Make your changes and confirm them following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): `git commit -m "commit_message"`
+5. Send to origin branch: `git push origin <branch_name> / <local>`
+6. Create pull request through Github.
+
+
+## Open source licensing info
+
+This project is under license. See the [LICENSE](https://github.com/fga-eps-mds/2022-2-Squad07/blob/readme/LICENSE) file for details.
+
+[⬆ Back to top](#mkdocs)<br>
