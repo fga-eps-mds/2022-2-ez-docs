@@ -59,7 +59,7 @@ To start using *mkdocs*, open an interactive shell and run the following steps:
 
 
 ## Getting involved
-1. Read the [CONTRIBUTING.md]() guide.
+1. Read the [CONTRIBUTING.md](docs/CONTRIBUTING.md) guide.
 2. Fork this repository.
 3. Create a brach on your local machine: `git checkout -b <brach_name>`.
 4. Make your changes and confirm them following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): `git commit -m "commit_message"`
@@ -69,10 +69,11 @@ To start using *mkdocs*, open an interactive shell and run the following steps:
 
 ## Open source licensing info
 
-This project is under license. See the [LICENSE](https://github.com/fga-eps-mds/2022-2-Squad07/blob/readme/LICENSE) file for details.
+This project is under license. See the [LICENSE](docs/LICENSE) file for details.
 
+---
 
 *Created by [Bruno Ribeiro](https://github.com/BrunoRiibeiro), [Bruno Martins](https://github.com/gitbmvb), [Diógenes Dantas](https://github.com/diogjunior100), [Igor Penha](https://github.com/igorpenhaa), [Lucas Bergholz](https://github.com/LucasBergholz) and [Rafael Nobre](https://github.com/RafaelN0bre) in 2022*
 
 
-[⬆ Back to top](#mkdocs)<br>
+[Back to top](#mkdocs)<br>
