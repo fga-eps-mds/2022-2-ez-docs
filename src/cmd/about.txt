@@ -15,7 +15,7 @@ through agile practices. The most used were Scrum and Extreme Programming (XP).
 a wide range of certificates, declarations, resumes, receipts, slips, or whatever else the imagination allows through a database and
 a template in markdown format.
 
-	We would like to tank the prof. Carla and all whom warmly walcomed us of any king during this journey.
+	We would like to thank the prof. Carla and all whom warmly welcomed us during this journey.
 
 	We would be very grateful if you would like to contribute with us!
 
