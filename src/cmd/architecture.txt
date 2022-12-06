@@ -8,7 +8,7 @@ Architecture
 	This module operates with only one set of data, that is, for an object, it returns only one document, having as main output the
 	doc_generator() function.
 	Inputs:
-	--> directory_template: str - tamplate folder .md
+	--> directory_template: str - template folder .md
 
 	--> key_name_file: str - parameter concerning the denominator key of the document name, which must follow the format {key_name}.
  	For example, for a template that has the keys "name" and "registration", the output could be "registration_name", generating the
@@ -45,7 +45,7 @@ Architecture
 	html, json, xlsx, xml.
 	1) Cleaning up incomplete lines;
 	2) Remove duplicates;
-	3) Converte to the required format in the document generation module;
+	3) Convert to the required format in the document generation module;
 
 3. Module for sending emails
 
