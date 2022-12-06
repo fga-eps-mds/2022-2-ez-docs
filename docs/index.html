@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>mkcert</title>
+  <title>mkdocs</title>
 
   <link rel="icon" href="/docs/images/Logo.png">
 
@@ -39,7 +39,7 @@
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="" />
             <span>
-              mkcert
+              mkdocs
             </span>
           </a>
           <div class="navbar-collapse" id="">
@@ -60,7 +60,7 @@
               <div class="overlay-content">
                 <a href="index.html">HOME</a>
                 <a href="service.html">ROADMAP</a>
-                <a href="team.html">EQUIPE</a>
+                <a href="team.html">TEAM</a>
               </div>
             </div>
           </div>
@@ -113,9 +113,15 @@
         <h2>
           Installation
         </h2>
-        <p>
-          Lallmdfanp naospdnm pasmdfopasmop ao mopfmaos ma;
-        </p>
+        <div class="service_text">
+          <p>
+            To install the package on your computer, you just have to do
+            a simple command on your terminal:
+          </p>
+          <p class="code_text">
+            python&ltversion&gt -m pip install mkdocs-s7
+          </p>  
+        </div>
       </div>
     </div>
 
@@ -135,10 +141,24 @@
         </div>
         <div class="col-md-6">
           <div class="detail-box">
-            <div class="heading_container">
+            <div class="feature_container">
               <h2>
                 How To Use
               </h2>
+              <div class="service_text">
+                <p>
+                  In todays version of 'mkdocs', the user needs a markdown template,
+                  a database (.csv, .txt or .xls), the pattern of the variables and
+                  choose a flag, which will correspond to the type of file the package will create.
+                  The value 1 of the flag creates pdf files, while 2 willl create markdown files.
+                  Opening your terminal, the user should type something similar to:
+                </p>
+                <p class="code_text ct2">
+                    mkdocs-s7 &ltpath to .md template&gt
+                    &ltpath to database&gt
+                    &ltpattern of variables&gt --flag = 1 or 2
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -149,6 +169,37 @@
 
   <!-- end feature section -->
 
+  <!-- example section -->
+  <section class="service_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Example Of Use
+        </h2>
+        <div class="service_text">
+          <p>
+            This quick example should make the use of the pip more clear:
+          </p>
+          <p class="code_text ct2 ct3">
+            mkdocs-s7 \documents\certificate.md  \documents\students.csv NAME_AGE_GRADE --flag=1
+          </p>
+          <p>
+            If you want to know more about the package, check out the GitHub Repository
+            down below:
+          </p>
+          <button class="git_button">
+            <img src="images/github.png" alt="">
+            <a href="https://github.com/fga-eps-mds/2022-2-Squad07">
+              Git Repository
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- end of example -->
+
   <!-- team section -->
 
   <section class="team_section layout_padding-top">
@@ -157,6 +208,10 @@
         <h2>
           Our Team
         </h2>
+        <p>
+          To know more about any member of the squad, make
+          sure to click their name and check out their GitHub.
+        </p>
       </div>
       <div class="layout_padding2-top">
         <div class="carousel-wrap ">
@@ -164,48 +219,83 @@
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/team.png" />
+                  <img class="fotinhas" src="images/brunoloiro.jpg" />
                 </div>
-                <div class="detail-box">
+                <div class="detail-box person-box">
                   <h5>
-                    Roduk
+                    <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a>
                   </h5>
-                  <h6>
-                    (CEO)
-                  </h6>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/team.png" />
+                  <img src="images/brunomartins.jpg" />
                 </div>
                 <div class="detail-box">
                   <h5>
-                    looduk
+                    <a href="https://github.com/gitbmvb">
+                      Bruno Martins
+                    </a>
                   </h5>
-                  <h6>
-                    (CO)
-                  </h6>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/team.png" />
+                  <img src="images/diogenes.jpg" />
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Roduk
+                    <a href="https://github.com/diogjunior100">
+                      Diógenes Dantas
+                    </a>
                   </h5>
-                  <h6>
-                    (CEO)
-                  </h6>
                 </div>
               </div>
             </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/igorpenha.jpg" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="https://github.com/igorpenhaa">
+                      Igor Penha
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/gobbi.jpg" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="https://github.com/LucasBergholz">
+                      Lucas Gobbi
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div><div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/rafael.jpg" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="https://github.com/RafaelN0bre">
+                      Rafael Nobre
+                    </a>
+                  </h5>
+                </div>
+              </div>
           </div>
         </div>
       </div>
