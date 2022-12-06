@@ -517,7 +517,23 @@ a:focus {
     height: 1px;
     position: absolute;
     bottom: -2px;
-    left: 44%;
+    left: 45%;
+    background-color: rgb(37, 37, 37);
+}
+
+.feature_container2 h2{
+  color: #000000;
+  position: relative;
+  font-size: 2.5rem;
+}
+
+.feature_container2 h2::before{
+  content: "";
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    bottom: -2px;
+    left: 47%;
     background-color: rgb(37, 37, 37);
 }
 
@@ -562,7 +578,13 @@ a:focus {
           justify-content: center;
 }
 
-.heading_container p{
+.team_section .heading_container h2{
+  font-size: 43px;
+  color: #000000;
+  position: relative;
+}
+
+.team_section .heading_container p{
   margin-top: 20px;
 }
 
