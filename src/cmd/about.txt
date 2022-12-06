@@ -1,15 +1,22 @@
-	Este projeto foi desenvolvido por estudantes de Engenharia de Software da Universidade de Brasília - Campus Gama (UnB-FGA) durante o semestre 2022.2, na disciplina de Métodos de Desenvolvimento de Software (MDS), sob orientação da profa. Dr. Carla Rocha Aguiar.
-	Contribuidores:
-Bruno Campos Ribeiro  (https://github.com/brunoriibeiro);
+	This project was developed by Software Engineering students at the University of Brasilia - Campus Gama (UnB-FGA) - during the
+2022.2 semester, in the discipline of Software Development Methods (SDM), under the guidance of prof. Dr. Carla Rocha Aguiar.
+
+Contributors:	
+Bruno Campos Ribeiro  (https://github.com/brunoriibeiro);					
 Bruno Martins Valério Bomfim (https://github.com/gitbmvb);
 Diógenes Dantas Lélis Júnior (https://github.com/diogjunior100);
 Igor e Silva Penha (https://github.com/igorpenhaa);
 Lucas Gobbi Bergholz (https://github.com/LucasBergholz);
 Rafael de Medeiros Nobre (https://github.com/RafaelN0bre);
 
-	O intuito geral da disciplina foi aprender e apronfundar-se sobre os diferentes tipos de abordagens existentes para criação de softwares por intermédio das práticas ágeis. As mais utilizadas foram o Scrum e o Extreme Programming (XP).
-	Assim, contribuimos para o sociedade de softwares livres com esse pequeno e útil projeto, chamado mkcert, que auxilia usuários a emitir em larga escala uma gama de certificados, declarações, currículos, recibos, boletos, e o que mais a imaginação permitir através de uma database e um template no formato markdown.
-	Gostaríamos de expressar nossa gratidão à prof. Carla e a todos os que nos aconselharam de alguma forma durante esta jornada.
-	
-	Ficaríamos bastante gratos se você quiser contribuir conosco!
-	“No matter the circumstance you can always improve. You can always start improving with yourself. You can always start improving today.” ― Kent Beck, creator of XP.
+	The general purpose of the course was to learn and deepen about the different types of existing approaches for creating software 
+through agile practices. The most used were Scrum and Extreme Programming (XP).
+	So, we contribute to the Open Source community with that small and functional project, called mkdocs, which helps users to issue
+a wide range of certificates, declarations, resumes, receipts, slips, or whatever else the imagination allows through a database and
+a template in markdown format.
+
+	We would like to tank the prof. Carla and all whom warmly walcomed us of any king during this journey.
+
+	We would be very grateful if you would like to contribute with us!
+
+“No matter the circumstance you can always improve. You can always start improving with yourself. You can always start improving today.” ― Kent Beck, creator of XP.

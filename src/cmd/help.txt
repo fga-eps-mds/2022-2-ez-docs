@@ -1,6 +1,6 @@
-Como utilizar o mkcert
+How to use mkdocs?
 
-1. Esteja com seus arquivos de template e dataset preparados e nas extensões corretas.
+1. Be sure your templates and database files ready to use, in the right format.
 2. ?
 3. ?
-4. Os arquivos de saída estarão na pasta output. Aproveite!
+4. The files will be in output folder. Enjoy it!
