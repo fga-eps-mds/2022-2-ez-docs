@@ -1,4 +1,4 @@
-List of command line:
+=====List of commands=====
 
 --about				Project overview, contributors, etc;
 --architecture		Architecture documentation;		

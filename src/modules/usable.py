@@ -1,6 +1,7 @@
 import os
 import glob
 import argparse
+from sys import argv
 
 def verify_folder_output():
     # Check whether the specified path exists or not
@@ -20,30 +21,14 @@ def clean_dir_md():
     for file_name in target_file_names:
         os.remove(file_name)
 
-class call_command_about(argparse.Action):
+class call_command(argparse.Action):
     def __call__(self, parser, namespace, values, option_string):
-        with open(file='cmd/about.txt') as f:
-           data = f.read()
-           print(data)
-        parser.exit()
+        #Catch the last argument given in the sys.arg
+        command = argv[-1].lstrip('-')
 
-class call_command_architecture(argparse.Action):
-    def __call__(self, parser, namespace, values, option_string):
-        with open(file='cmd/architecture.txt') as f:
+        #Open the txt response
+        with open(file=f'cmd/{command}.txt') as f:
            data = f.read()
            print(data)
-        parser.exit()
-
-class call_command_list(argparse.Action):
-    def __call__(self, parser, namespace, values, option_string):
-        with open(file='cmd/list.txt') as f:
-           data = f.read()
-           print(data)
-        parser.exit()
-
-class call_command_help(argparse.Action):
-    def __call__(self, parser, namespace, values, option_string):
-        with open(file='cmd/help.txt') as f:
-           data = f.read()
-           print(data)
+        #Close the parser
         parser.exit()
