@@ -27,7 +27,7 @@ To start using *mkdocs*, you'll need a markdown template, a database (.csv, .txt
 
 * directory_template: str - template folder .md
 * key_name_file: str - parameter concerning the denominator key of the document name, which must follow the format {key_name}.
-For example, for a template that has the keys "name" and "registration", the output could be "registration_name", generating the following results:
+For example, for a template that has the keys "name" and "registration", the output could be "name_registration", generating the following results:
     - Aaron_3141592653.pdf
     - Barnardo_2718281828.pdf
     - Caliban_4815162342.pdf
