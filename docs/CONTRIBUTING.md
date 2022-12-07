@@ -19,7 +19,7 @@ If you're unable to find an open issue addressing the problem, [open a new one](
 
 * Open a new GitHub pull request with the patch.
 * Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.
-* Before submitting, please read the our [Standards](https://github.com/fga-eps-mds/2022-2-Squad07/issues/7) guide to know more about coding conventions and benchmarks.
+* Before submitting, please read the our [Standards](https://fga-eps-mds.github.io/2022-2-Squad07/code_conduct.html) guide to know more about coding conventions and benchmarks.
 
 #### **Did you fix whitespace, format code, or make a purely cosmetic patch?**
 
