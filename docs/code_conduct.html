@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>mkdocs</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Logo.png" alt="" />
+            <span>
+              mkdocs
+            </span>
+          </a>
+          <div class="navbar-collapse" id="">
+            <div class="container">
+              <div class=" mr-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav justify-content-between ">
+                  <div class="User_option">
+                    <li class="">
+                      <a class="" href="contact.html">
+                      
+                      </a>
+                    </li>
+                    <form class="form-inline my-2 ml-5 mb-3 mb-lg-0">
+                      <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                    </form>
+                  </div>
+                </ul>
+              </div>
+            </div>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="service.html">ROADMAP</a>
+                <a href="team.html">TEAM</a>
+                <a href="contribution.html">CODE PATTERNS</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- text section -->
+
+  <section class="service_section layout_padding-bottom">
+    <div class="container">
+      <div class="feature_container2">
+        <h2 id="main_title">
+          Code Patterns
+        </h2>
+        <div class="service_text" id="code_text">
+          <p>
+            During the development of the package, it was necessary
+            to create patterns on the code with the objective of organizing
+            the code, making it easier for the crew to understand parts of the code
+            that they didn't make. This also means that anyone out there that will
+            contribute to our project with the Open Source principle, also has a better
+            undestanding of the code.
+          </p>  
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="feature_container2" id="variables">
+        <h2>
+          Variables
+        </h2>
+        <div class="service_text">
+          <p>
+            For the variables, we used the snake_case pattern, in which all variables will be in lower case, in English and without
+            accent or special characters. In case of variables with compound names, it was used underscore as a separator ( _ ).
+            For constants, characters are all uppercase.
+          </p>
+          <p class="code_text" id="ct_var">
+            <span style="color: rgb(11, 250, 11);"># Constants</span> <br>
+            VERSION = "3.0.0" <br> <br>
+            <span style="color: rgb(11, 250, 11);"># Variables</span> <br>
+            element_name = "Name of element" <br>
+            obj = "Object"
+          </p>  
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="feature_container2" id="classes_methods">
+        <h2>
+          Classes and Methods
+        </h2>
+        <div class="service_text">
+          <p>
+            The name of the classes will follow the CamelCase pattern. The methods will, as well as the
+            variables, follow the snake_case pattern.
+          </p>
+          <p class="code_text" id="ct_var">
+            <span style="color: yellow;"> class</span> <span style="color: #46c5eb;">People</span>: <br>
+            &emsp;&emsp;&emsp;<span style="color: yellow;">def</span> <span style="color: #46c5eb;">__init__</span>(self, name, age): <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;self.name = name <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;self.age = age <br> <br>
+
+            &emsp;&emsp;&emsp;<span style="color: yellow;">def</span> <span style="color: #46c5eb;">set.name</span>(self, name): <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;self.name = name <br> <br>
+
+            &emsp;&emsp;&emsp;<span style="color: yellow;">def</span> <span style="color: #46c5eb;">get.name</span>(self): <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<span style="color: yellow;">return</span> self.name
+          </p>  
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="feature_container2" id="classes_methods">
+        <h2>
+          Code Style
+        </h2>
+        <div class="service_text">
+          <p>
+            For verification and standardization of the code-style,
+            it will be used the <a href="https://flake8.pycqa.org/en/latest/">Flake8</a> package.
+          </p> 
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end text section-->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section ">
+    <div class="container">
+      <p>
+        &copy; 2021 All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- end  footer section -->
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+</body>
+</body>
+
+</html>
