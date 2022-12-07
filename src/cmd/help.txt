@@ -1,0 +1,6 @@
+=====How to use mkdocs=====
+
+1. Be sure your templates and database files ready to use, in the right format.
+2. ?
+3. ?
+4. The files will be in output folder. Enjoy it!
