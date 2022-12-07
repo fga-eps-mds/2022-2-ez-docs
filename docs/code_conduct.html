@@ -76,7 +76,7 @@
                 <a href="index.html">HOME</a>
                 <a href="service.html">ROADMAP</a>
                 <a href="team.html">TEAM</a>
-                <a href="contribution.html">CONTRIBUTION</a>
+                <a href="contribution.html">CODE PATTERNS</a>
               </div>
             </div>
           </div>
@@ -85,6 +85,93 @@
     </header>
     <!-- end header section -->
   </div>
+
+  <!-- text section -->
+
+  <section class="service_section layout_padding-bottom">
+    <div class="container">
+      <div class="feature_container2">
+        <h2 id="main_title">
+          Code Patterns
+        </h2>
+        <div class="service_text" id="code_text">
+          <p>
+            During the development of the package, it was necessary
+            to create patterns on the code with the objective of organizing
+            the code, making it easier for the crew to understand parts of the code
+            that they didn't make. This also means that anyone out there that will
+            contribute to our project with the Open Source principle, also has a better
+            undestanding of the code.
+          </p>  
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="feature_container2" id="variables">
+        <h2>
+          Variables
+        </h2>
+        <div class="service_text">
+          <p>
+            For the variables, we used the snake_case pattern, in which all variables will be in lower case, in English and without
+            accent or special characters. In case of variables with compound names, it was used underscore as a separator ( _ ).
+            For constants, characters are all uppercase.
+          </p>
+          <p class="code_text" id="ct_var">
+            <span style="color: rgb(11, 250, 11);"># Constants</span> <br>
+            VERSION = "3.0.0" <br> <br>
+            <span style="color: rgb(11, 250, 11);"># Variables</span> <br>
+            element_name = "Name of element" <br>
+            obj = "Object"
+          </p>  
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="feature_container2" id="classes_methods">
+        <h2>
+          Classes and Methods
+        </h2>
+        <div class="service_text">
+          <p>
+            The name of the classes will follow the CamelCase pattern. The methods will, as well as the
+            variables, follow the snake_case pattern.
+          </p>
+          <p class="code_text" id="ct_var">
+            <span style="color: yellow;"> class</span> <span style="color: #46c5eb;">People</span>: <br>
+            &emsp;&emsp;&emsp;<span style="color: yellow;">def</span> <span style="color: #46c5eb;">__init__</span>(self, name, age): <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;self.name = name <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;self.age = age <br> <br>
+
+            &emsp;&emsp;&emsp;<span style="color: yellow;">def</span> <span style="color: #46c5eb;">set.name</span>(self, name): <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;self.name = name <br> <br>
+
+            &emsp;&emsp;&emsp;<span style="color: yellow;">def</span> <span style="color: #46c5eb;">get.name</span>(self): <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<span style="color: yellow;">return</span> self.name
+          </p>  
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="feature_container2" id="classes_methods">
+        <h2>
+          Code Style
+        </h2>
+        <div class="service_text">
+          <p>
+            For verification and standardization of the code-style,
+            it will be used the <a href="https://flake8.pycqa.org/en/latest/">Flake8</a> package.
+          </p> 
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end text section-->
 
   <!-- footer section -->
   <footer class="container-fluid footer_section ">

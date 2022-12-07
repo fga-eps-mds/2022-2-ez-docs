@@ -713,3 +713,30 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+/* contribution.html section */
+
+#main_title{
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+#code_text{
+  margin-bottom: 40px;
+}
+
+#ct_var{
+  height: auto;
+  width: auto;
+  text-align: left;
+  padding: 2% 2%;
+  margin-bottom: 40px;
+  font-family: "Consolas";
+
+  background-color: #000000;
+  border: 3px solid #46c5eb;
+  color: #ffffff;
+}
+
+
+/* end contribution.html section*/
