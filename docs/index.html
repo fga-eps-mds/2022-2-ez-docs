@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>mkdocs</title>
+
+  <link rel="icon" href="/docs/images/Logo.png">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+            <span>
+              mkdocs
+            </span>
+          </a>
+          <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="service.html">ROADMAP</a>
+                <a href="team.html">TEAM</a>
+                <a href="code_conduct.html">CODE PATTERNS</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Your Tool For Quick Doc Generation
+                    </h1>
+                    <h4>
+                      Create On Demand
+                    </h4>
+                    <p>
+                      The quickest way to generate documents in large scale.
+                      Step by step on how to install and use below.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding-bottom">
+    <div class="container">
+      <div class="feature_container2">
+        <h2>
+          Installation
+        </h2>
+        <div class="service_text">
+          <p>
+            To install the package on your computer, you just have to do
+            a simple command on your terminal:
+          </p>
+          <p class="code_text">
+            python&ltversion&gt -m pip install mkdocs-s7
+          </p>  
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end service section -->
+
+  <!-- feature section -->
+
+  <section class="feature_section layout_padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/feature-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="feature_container">
+              <h2>
+                How To Use
+              </h2>
+              <div class="service_text">
+                <p>
+                  In todays version of 'mkdocs', the user needs a markdown template,
+                  a database (.csv, .txt or .xls), the pattern of the variables and
+                  choose a flag, which will correspond to the type of file the package will create.
+                  The value 1 of the flag creates pdf files, while 2 willl create markdown files.
+                  Opening your terminal, the user should type something similar to:
+                </p>
+                <p class="code_text ct2">
+                    mkdocs-s7 &ltpath to .md template&gt
+                    &ltpath to database&gt
+                    &ltpattern of variables&gt --flag = 1 or 2
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end feature section -->
+
+  <!-- example section -->
+  <section class="service_section layout_padding-bottom">
+    <div class="container">
+      <div class="feature_container2">
+        <h2>
+          Example Of Use
+        </h2>
+        <div class="service_text">
+          <p>
+            This quick example should make the use of the pip more clear:
+          </p>
+          <p class="code_text ct2 ct3">
+            mkdocs-s7 \documents\certificate.md  \documents\students.csv NAME_AGE_GRADE --flag=1
+          </p>
+          <p>
+            If you want to know more about the package, check out the GitHub Repository
+            down below:
+          </p>
+          <button class="git_button">
+            <img src="images/github.png" alt="">
+            <a href="https://github.com/fga-eps-mds/2022-2-Squad07">
+              Git Repository
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- end of example -->
+
+  <!-- team section -->
+
+  <section class="team_section layout_padding-top">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our Team
+        </h2>
+        <p>
+          To know more about any member of the squad, make
+          sure to click their name and check out their GitHub.
+        </p>
+      </div>
+      <div class="layout_padding2-top">
+        <div class="carousel-wrap ">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img class="fotinhas" src="images/brunoloiro.jpg" />
+                </div>
+                <div class="detail-box person-box">
+                  <h5>
+                    <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/brunomartins.jpg" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="https://github.com/gitbmvb">
+                      Bruno Martins
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/diogenes.jpg" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="https://github.com/diogjunior100">
+                      Diógenes Dantas
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/igorpenha.jpg" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="https://github.com/igorpenhaa">
+                      Igor Penha
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/gobbi.jpg" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="https://github.com/LucasBergholz">
+                      Lucas Gobbi
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div><div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/rafael.jpg" />
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="https://github.com/RafaelN0bre">
+                      Rafael Nobre
+                    </a>
+                  </h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end team section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section ">
+    <div class="container">
+      <p>
+        &copy; 2021 All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- end  footer section -->
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+</body>
+
+</html>
