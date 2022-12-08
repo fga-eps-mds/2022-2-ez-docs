@@ -27,7 +27,7 @@ class call_command(argparse.Action):
         command = argv[-1].lstrip('-')
 
         #Open the txt response
-        with open(file=f'cmd/{command}.txt') as f:
+        with open(file=f'./cmd/{command}.txt') as f:
            data = f.read()
            print(data)
         #Close the parser

@@ -1,2 +1,5 @@
 mkdocs_s7/modules/__pycache__/
 mdpdf.log
+src/build
+src/dist
+src/mkdocs_s7.egg-info

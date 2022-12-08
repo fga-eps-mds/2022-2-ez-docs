@@ -7,7 +7,7 @@ long_description = 'Um pacote pip do projeto de Métodos de Desenvolvimento de S
   
 setup(
         name ='mkdocs_s7',
-        version ='1.3.0',
+        version ='1.7.0',
         author ='Bruno Ribeiro, Bruno Martins, Diógenes Dantas, Igor Penha, Lucas Gobbi e Rafael Nobre',
         author_email ='rafaelmedeirosnobre2001@gmail.com',
         description ='Um pacote python de geração de documentos automáticos',
@@ -17,7 +17,7 @@ setup(
         packages = find_packages(),
         entry_points ={
             'console_scripts': [
-                'mkdocs_s7 = mkdocs_s7.main:main'
+                'mkdocs_s7= mkdocs_s7.main:main'
             ]
         },
         classifiers =(
