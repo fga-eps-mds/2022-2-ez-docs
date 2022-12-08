@@ -10,7 +10,7 @@ long_description = readme
   
 setup(
         name ='ez_docs',
-        version ='0.0.2',
+        version ='0.0.3',
         author ='Bruno Ribeiro, Bruno Martins, Diógenes Dantas, Igor Penha, Lucas Gobbi e Rafael Nobre',
         author_email ='rafaelmedeirosnobre2001@gmail.com',
         description ='Um pacote python de geração de documentos automáticos',
@@ -20,7 +20,7 @@ setup(
         packages = find_packages(),
         entry_points ={
             'console_scripts': [
-                'ez_docs= ez_docs.main:main'
+                'ez-docs= ez_docs.main:main'
             ]
         },
         classifiers =(
