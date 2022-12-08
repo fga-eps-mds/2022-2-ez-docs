@@ -1,7 +1,7 @@
 import argparse
-from modules.doc_generation import doc_generator
-from modules.usable import *
-from modules.data_cleaning import filter_data
+from mkdocs_s7.modules.doc_generation import doc_generator
+from mkdocs_s7.modules.usable import *
+from mkdocs_s7.modules.data_cleaning import filter_data
 
 def mk_docs(dict_args: dict):
     verify_folder_output()
