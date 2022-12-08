@@ -52,7 +52,7 @@ For example, for a template that has the keys "name" and "registration", the out
 
 With that, you may open an interactive shell and run:
 ```bash
-$ ez-docs-s7 <~/template.md> <~/database> <~/pattern_keys> --flag = 1 or 2
+$ ez-docs <~/template.md> <~/database> <~/pattern_keys> --flag = 1 or 2
 ```
 
 
