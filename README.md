@@ -1,10 +1,10 @@
-# mkdocs
+# ez-docs
 
 ### What's up everyone!
 
-mkdocs is a MVP (minimum viable product) that were build for an SDM (Software Development Methods) class, with the aim of learn the goals of different approaches for creating software through agile practices.
+ez-docs is a MVP (minimum viable product) that were build for an SDM (Software Development Methods) class, with the aim of learn the goals of different approaches for creating software through agile practices.
 
-So, we contribute to the Open Source community with mkdocs, which helps users to issue a wide range of certificates, declarations, resumes, receipts, slips, or whatever else the imagination allows through a database and a template in markdown format.
+So, we contribute to the Open Source community with ez-docs, which helps users to issue a wide range of certificates, declarations, resumes, receipts, slips, or whatever else the imagination allows through a database and a template in markdown format.
 
 ## Prerequisites
 
@@ -16,14 +16,14 @@ Before starting, make sure you've met the following requirements:
 
 ## Installation
 
-To install *mkdocs*, open an interactive shell and run:
+To install *ez-docs*, open an interactive shell and run:
 ```bash
-$ python<version> -m pip install mkdocs-s7
+$ python<version> -m pip install ez-docs
 ```
 
-## Using mkdocs
+## Using ez-docs
 
-To start using *mkdocs*, you'll need a markdown template, a database (.csv, .txt, xls) and a pattern of keys.
+To start using *ez-docs*, you'll need a markdown template, a database (.csv, .txt, xls) and a pattern of keys.
 
 * directory_template: str - template folder .md
 * key_name_file: str - parameter concerning the denominator key of the document name, which must follow the format {key_name}.
@@ -52,7 +52,7 @@ For example, for a template that has the keys "name" and "registration", the out
 
 With that, you may open an interactive shell and run:
 ```bash
-$ mkdocs-s7 <~/template.md> <~/database> <~/pattern_keys> --flag = 1 or 2
+$ ez-docs-s7 <~/template.md> <~/database> <~/pattern_keys> --flag = 1 or 2
 ```
 
 
