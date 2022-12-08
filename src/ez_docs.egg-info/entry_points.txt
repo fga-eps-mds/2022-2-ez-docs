@@ -1,0 +1,3 @@
+[console_scripts]
+ez_docs = ez_docs.main:main
+

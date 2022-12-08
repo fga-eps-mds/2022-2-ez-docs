@@ -6,11 +6,11 @@ with open('requirements.txt') as f:
 with open("README.md", "r") as fh:
     readme = fh.read()
   
-long_description = 'Um pacote pip do projeto de Métodos de Desenvolvimento de Software - Squad7'
+long_description = readme
   
 setup(
         name ='ez_docs',
-        version ='0.0.1',
+        version ='0.0.2',
         author ='Bruno Ribeiro, Bruno Martins, Diógenes Dantas, Igor Penha, Lucas Gobbi e Rafael Nobre',
         author_email ='rafaelmedeirosnobre2001@gmail.com',
         description ='Um pacote python de geração de documentos automáticos',
