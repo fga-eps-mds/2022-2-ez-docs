@@ -70,7 +70,7 @@ $ ez-docs <~/template.md> <~/database> <~/pattern_keys> --flag = 1 or 2
 This project is under license. See the [LICENSE](LICENSE) file for details.
 
 ---
-**2022-2-Squad7**  
+**_ez-docs Team_**  
 
 #### Special thanks to:
 Dr. [Carla Rocha Aguiar](https://github.com/RochaCarla), our professor at the University of Brasília.
