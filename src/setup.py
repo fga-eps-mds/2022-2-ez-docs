@@ -8,9 +8,10 @@ with open("README.md", "r") as fh:
   
 long_description = readme
   
+cmds = ["cmd/*.txt"]
 setup(
         name ='ez_docs',
-        version ='0.0.3',
+        version ='0.0.6',
         author ='Bruno Ribeiro, Bruno Martins, Diógenes Dantas, Igor Penha, Lucas Gobbi e Rafael Nobre',
         author_email ='rafaelmedeirosnobre2001@gmail.com',
         description ='Um pacote python de geração de documentos automáticos',
@@ -18,6 +19,7 @@ setup(
         long_description_content_type ="text/markdown",
         license ='MIT',
         packages = find_packages(),
+        package_data = {'ez_docs' : cmds },
         entry_points ={
             'console_scripts': [
                 'ez-docs= ez_docs.main:main'

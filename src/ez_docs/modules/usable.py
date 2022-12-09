@@ -2,6 +2,9 @@ import os
 import glob
 import argparse
 from sys import argv
+import importlib.resources
+from ez_docs import cmd
+
 
 def verify_folder_output():
     # Check whether the specified path exists or not
@@ -27,7 +30,9 @@ class call_command(argparse.Action):
         command = argv[-1].lstrip('-')
 
         #Open the txt response
-        with open(file=f'./cmd/{command}.txt') as f:
+        path = importlib.resources.files(cmd)
+        
+        with open(file=f'{path}\{command}.txt', encoding='utf-8') as f:
            data = f.read()
            print(data)
         #Close the parser
