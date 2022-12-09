@@ -23,6 +23,8 @@ def clean_dir_md():
     # Delete the files.
     for file_name in target_file_names:
         os.remove(file_name)
+    os.remove('mdpdf.log')
+
 
 class call_command(argparse.Action):
     def __call__(self, parser, namespace, values, option_string):
