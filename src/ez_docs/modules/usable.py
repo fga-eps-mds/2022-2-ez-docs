@@ -34,7 +34,7 @@ class call_command(argparse.Action):
         #Open the txt response
         path = importlib.resources.files(cmd)
         
-        with open(file=f'{path}\{command}.txt', encoding='utf-8') as f:
+        with open(file=f'{path}/{command}.txt', encoding='utf-8') as f:
            data = f.read()
            print(data)
         #Close the parser
