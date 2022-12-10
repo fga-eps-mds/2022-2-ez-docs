@@ -26,7 +26,7 @@ def clean_dir_md():
     os.remove('mdpdf.log')
 
 
-class call_command(argparse.Action):
+class CallCommand(argparse.Action):
     def __call__(self, parser, namespace, values, option_string):
         #Catch the last argument given in the sys.arg
         command = argv[-1].lstrip('-')
