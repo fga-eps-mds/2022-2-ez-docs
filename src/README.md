@@ -79,7 +79,6 @@ List of all command line commands:
 $ ez-docs --list
 ```
 
-
 ## Getting involved
 1. Read the [CONTRIBUTING.md](docs/CONTRIBUTING.md) guide.
 2. Fork this repository.
