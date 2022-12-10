@@ -1,7 +1,7 @@
 import argparse
-from modules.doc_generation import doc_generator
-from modules.usable import *
-from modules.data_cleaning import filter_data
+from ez_docs.modules.doc_generation import doc_generator
+from ez_docs.modules.usable import *
+from ez_docs.modules.data_cleaning import filter_data
 
 def mk_docs(dict_args: dict):
     verify_folder_output()
@@ -21,6 +21,7 @@ def main():
     parser.add_argument('--architecture', nargs=0, help='Architecture stuff', action=call_command)
     parser.add_argument('--help', nargs=0, help='How to use it', action=call_command)
     parser.add_argument('--list', nargs=0, help='Command list', action=call_command)
+    parser.add_argument('--flag', help='Flag to output file extension. 0 for .md, 1 for .pdf', default=1)
     parser.add_argument('template_directory', help='Template dictionary.')
     parser.add_argument('base_directory', help='Database directory.')
     parser.add_argument('file_name_pattern', help='Output file pattern name.')
