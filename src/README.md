@@ -55,6 +55,30 @@ With that, you may open an interactive shell and run:
 $ ez-docs <~/template.md> <~/database> <~/pattern_keys> --flag = 1 or 2
 ```
 
+## Special functionalities
+
+ez-docs has some in-line functionalities. To use it, type one of the commands below in your terminal:
+
+Project overview, contributors, etc:
+```bash
+$ ez-docs --about
+```
+
+Architecture stuff:
+```bash
+$ ez-docs --architecture
+```
+
+How to use tutorial:
+```bash
+$ ez-docs --help
+```
+
+List of all command line commands:
+```bash
+$ ez-docs --list
+```
+
 
 ## Getting involved
 1. Read the [CONTRIBUTING.md](docs/CONTRIBUTING.md) guide.
