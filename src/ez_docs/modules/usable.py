@@ -26,7 +26,7 @@ def clean_dir_md():
     os.remove('mdpdf.log')
 
 
-class call_command(argparse.Action):
+class CallCommand(argparse.Action):
     def __call__(self, parser, namespace, values, option_string):
         #Catch the last argument given in the sys.arg
         command = argv[-1].lstrip('-')
@@ -34,7 +34,7 @@ class call_command(argparse.Action):
         #Open the txt response
         path = importlib.resources.files(cmd)
         
-        with open(file=f'{path}\{command}.txt', encoding='utf-8') as f:
+        with open(file=f'{path}/{command}.txt', encoding='utf-8') as f:
            data = f.read()
            print(data)
         #Close the parser
