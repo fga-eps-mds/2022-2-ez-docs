@@ -25,6 +25,10 @@ def clean_dir_md():
         os.remove(file_name)
     os.remove('mdpdf.log')
 
+def progress_bar(index: int, amount: int, char: str, final_length: int = 50):
+    print(f"\033[93m({index}/{amount})\033[0m xx% [\033[96m", end='')
+    charline = "".join([char for _ in range(round(final_length*index/amount))])
+    print(charline + "\033[0m]")
 
 class CallCommand(argparse.Action):
     def __call__(self, parser, namespace, values, option_string):
@@ -39,8 +43,3 @@ class CallCommand(argparse.Action):
            print(data)
         #Close the parser
         parser.exit()
-
-def charline(symbol: str, length: int):
-    print("[", end='')
-    for _ in range(length): print(symbol, end='')
-    print("]")
