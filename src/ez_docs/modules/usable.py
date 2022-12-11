@@ -39,3 +39,8 @@ class CallCommand(argparse.Action):
            print(data)
         #Close the parser
         parser.exit()
+
+def charline(symbol: str, length: int):
+    print("[", end='')
+    for _ in range(length): print(symbol, end='')
+    print("]")
