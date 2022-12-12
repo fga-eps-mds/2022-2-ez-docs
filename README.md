@@ -2,16 +2,40 @@
 
 ### What's up everyone!
 
-ez-docs is a MVP (minimum viable product) that were build for an SDM (Software Development Methods) class, with the aim of learn the goals of different approaches for creating software through agile practices.
+ez-docs is a MVP (minimum viable product) Python project that were build for an SDM (Software Development Methods) class, with the aim of learn the goals of different approaches for creating software through agile practices.
 
 So, we contribute to the Open Source community with ez-docs, which helps users to issue a wide range of certificates, declarations, resumes, receipts, slips, or whatever else the imagination allows through a database and a template in markdown format.
+
+#### Realised features
+
+- [x] Generate doc's in .pdf [#20](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/20)
+- [] e-mail generated doc's [#24](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/24)
+- [x] Package pip installation [#30](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/30)
+- [x] Argparse commands [#39](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/39)
+- [x] Run package via CLI [#43](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/43)
+
+#### Realised doc's
+
+- [x] Github Page [#31](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/31)
+- [x] README [#32](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/32)
+- [x] Product Backlog [#33](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/33)
+- [x] about [#39](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/39)
+- [x] architecture [#39](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/39)
+- [x] help [#39](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/39)
+- [x] list [#39](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/39)
+
+#### Bugs
+
+* Semicolon separator on .csv files not working.
+* key_pattern optionality.
+* flag=1/flag=2 always generating .md files.
 
 ## Prerequisites
 
 Before starting, make sure you've met the following requirements:
 * You have installed the latest version of `<Python>`.
 * You have a `<Windows / Linux / Mac>` machine.
-* You read the [project GitPage](https://fga-eps-mds.github.io/2022-2-Squad07/index.html).
+* You read the [project GitPage](https://fga-eps-mds.github.io/2022-2-ez-docs/index.html).
 
 
 ## Installation
@@ -26,7 +50,7 @@ $ python<version> -m pip install ez-docs
 To start using *ez-docs*, you'll need a markdown template, a database (.csv, .txt, xls) and a pattern of keys.
 
 * directory_template: str - template folder .md
-* key_name_file: str - parameter concerning the denominator key of the document name, which must follow the format {key_name}.
+* file_name_pattern: str - parameter concerning the denominator key of the document name, which must follow the format {key_pattern}.
 For example, for a template that has the keys "name" and "registration", the output could be "name_registration", generating the following results:
     - Aaron_3141592653.pdf
     - Barnardo_2718281828.pdf
@@ -52,7 +76,7 @@ For example, for a template that has the keys "name" and "registration", the out
 
 With that, you may open an interactive shell and run:
 ```bash
-$ ez-docs <~/template.md> <~/database> <~/pattern_keys> --flag = 1 or 2
+$ ez-docs <~/template.md> <~/database> <pattern_keys> --flag=1 or 2
 ```
 
 ## Special functionalities
@@ -93,10 +117,11 @@ $ ez-docs --list
 This project is under license. See the [LICENSE](LICENSE) file for details.
 
 ---
-**_ez-docs Team_**  
+## So, take it easy, and use ez-docs to make your docs!
 
 #### Special thanks to:
 Dr. [Carla Rocha Aguiar](https://github.com/RochaCarla), our professor at the University of Brasília.
 
+**_ez-docs Team_**  
 
 *Created by [Bruno Ribeiro](https://github.com/BrunoRiibeiro), [Bruno Martins](https://github.com/gitbmvb), [Diógenes Dantas](https://github.com/diogjunior100), [Igor Penha](https://github.com/igorpenhaa), [Lucas Bergholz](https://github.com/LucasBergholz) and [Rafael Nobre](https://github.com/RafaelN0bre) in 2022*
