@@ -9,7 +9,7 @@ So, we contribute to the Open Source community with ez-docs, which helps users t
 #### Realised features
 
 - [x] Generate doc's in .pdf [#20](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/20)
-- [] e-mail generated doc's [#24](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/24)
+- [ ] e-mail generated doc's [#24](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/24)
 - [x] Package pip installation [#30](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/30)
 - [x] Argparse commands [#39](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/39)
 - [x] Run package via CLI [#43](https://github.com/fga-eps-mds/2022-2-ez-docs/issues/43)
