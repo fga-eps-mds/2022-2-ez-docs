@@ -1,10 +1,10 @@
 # Approvers to .js .css .html files
-* .js @LucasBergholz @igorpenhaa
-* .html @LucasBergholz @igorpenhaa
-* .css @LucasBergholz @igorpenhaa
+*.js @LucasBergholz @igorpenhaa
+*.html @LucasBergholz @igorpenhaa
+*.css @LucasBergholz @igorpenhaa
 
 # Approvers to .py files
-* .py @BrunoRiibeiro @gitbmvb @diogjunior100 @RafaelN0bre
+*.py @BrunoRiibeiro @gitbmvb @diogjunior100 @RafaelN0bre
 
 # Approvers to src files
 /src/ @BrunoRiibeiro @gitbmvb @diogjunior100 @RafaelN0bre
