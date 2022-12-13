@@ -29,6 +29,7 @@ def main():
     parser.add_argument('--architecture', nargs=0, help='Architecture stuff', action=CallCommand)
     parser.add_argument('--help', nargs=0, help='How to use it', action=CallCommand)
     parser.add_argument('--list', nargs=0, help='Command list', action=CallCommand)
+    parser.add_argument('--version', nargs=0, help='Check your ez-docs version', action=CallCommand)
     parser.add_argument('--flag', help='Flag to output file extension. 0 for .md, 1 for .pdf', default=1)
     parser.add_argument('template_directory', help='Template dictionary.')
     parser.add_argument('base_directory', help='Database directory.')

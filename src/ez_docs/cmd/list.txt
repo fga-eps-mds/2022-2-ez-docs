@@ -1,6 +1,7 @@
 =====List of commands=====
 
---about				Project overview, contributors, etc;
---architecture		Architecture documentation;		
---help				How to use tutorial;
---list				List of all command line commands;
+--about             Project overview, contributors, etc;
+--architecture      Architecture documentation;		
+--help              How to use tutorial;
+--list              List of all command line commands;
+--version           Check your ez-docs version;
