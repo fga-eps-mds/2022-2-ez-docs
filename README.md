@@ -49,7 +49,17 @@ $ python<version> -m pip install ez-docs
 
 To start using *ez-docs*, you'll need a markdown template, a database (.csv, .txt, xls) and a pattern of keys.
 
-* directory_template: str - template folder .md
+* directory_template: str - template.md
+    
+   In your markdown template you must to indicate the fields that you want to replace for the values in database, with the following pattern of keys:  <<SAME_DATABASE_COLUMN_NAME>> 
+       
+
+    ![Template file example](/docs/images/template.png "Template file example")
+
+* database: str - database.(csv, txt, xls)
+    
+    ![Database file example](/docs/images/database.png "Database file example")
+
 * file_name_pattern: str - parameter concerning the denominator key of the document name, which must follow the format {key_pattern}.
 For example, for a template that has the keys "name" and "registration", the output could be "name_registration", generating the following results:
     - Aaron_3141592653.pdf
@@ -57,19 +67,7 @@ For example, for a template that has the keys "name" and "registration", the out
     - Caliban_4815162342.pdf
 
     Valid separators: registration_name, registration-name, registration:name, registration name.
-* key_value: dict - dictionary with all the keys and their respective values, already extracted from the module that handled
-	the data.
-    - Structure:
-    ```python
-    {
-        "NAME": "Diomedes",
-        "CLASS": "Databases",
-        "DATE": "23 November 2022",
-        "TIN": "161.803.398-87",
-        "REGISTRATION": "1123581321"
-    }
-    ```
-    Keys are arbitrary in nature, which means that their names, quantities, and repetitions are uncertain. All will be searched within the template: those found will be replaced by the corresponding value, and those that are not will be indicated in the terminal via warning.
+
 * flag: int - optional parameter that defines the final output format.
     - 1 (def.) - The doc will be converted to .pdf
     - 2 - The doc will remain in .md
@@ -78,6 +76,8 @@ With that, you may open an interactive shell and run:
 ```bash
 $ ez-docs <~/template.md> <~/database> <pattern_keys> --flag=1 or 2
 ```
+
+![](/docs/images/exampleofuse.gif)
 
 ## Special functionalities
 
@@ -104,7 +104,7 @@ $ ez-docs --list
 ```
 
 ## Getting involved
-1. Read the [CONTRIBUTING.md](docs/CONTRIBUTING.md) guide.
+1. Read the [CONTRIBUTING.md](https://github.com/fga-eps-mds/2022-2-ez-docs/blob/main/docs/CONTRIBUTING.md) guide.
 2. Fork this repository.
 3. Create a branch on your local machine: `git checkout -b <branch_name>`.
 4. Make your changes and confirm them following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): `git commit -m "commit_message"`
