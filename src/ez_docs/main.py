@@ -1,16 +1,24 @@
 import argparse
+import time
 from ez_docs.modules.doc_generation import doc_generator
 from ez_docs.modules.usable import *
 from ez_docs.modules.data_cleaning import filter_data
 
 def mk_docs(dict_args: dict):
     verify_folder_output()
-    for obj in filter_data(dict_args['base_directory']):
+    dataset = filter_data(dict_args['base_directory'])
+    initial_time = time.time()
+    for index in range(len(dataset)):
         doc_generator(
             dict_args['template_directory'],
-            obj, dict_args['file_name_pattern'],
+            dataset[index], dict_args['file_name_pattern'],
             dict_args['flag']
         )
+        progress_bar(index + 1, len(dataset), '#')
+        
+    print(f"Done.\nTotal generated objects: {len(dataset)}")
+    print(f"Elapsed time: {time.time() - initial_time : 1.2f}s")
+        
 
     if dict_args['flag'] == 1:
         clean_dir_md()

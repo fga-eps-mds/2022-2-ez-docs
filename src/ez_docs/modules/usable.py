@@ -1,7 +1,7 @@
 import os
 import glob
 import argparse
-from sys import argv
+from sys import argv, stdout
 import importlib.resources
 from ez_docs import cmd
 
@@ -25,6 +25,11 @@ def clean_dir_md():
         os.remove(file_name)
     os.remove('mdpdf.log')
 
+def progress_bar(index: int, amount: int, char: str, final_length: int = 25):
+    stdout.write("\033[F\033[K\033[F\033[K\033[F\033[K")
+    print(f"\033[93m({index}/{amount})\033[0m {index * 100/amount: 1.2f}% [\033[96m", end='')
+    charline = "".join([char for _ in range(round(final_length*index/amount))])
+    print(charline + "\033[0m]")
 
 class CallCommand(argparse.Action):
     def __call__(self, parser, namespace, values, option_string):
