@@ -181,8 +181,26 @@
           <p>
             This quick example should make the use of the pip more clear:
           </p>
-          <p class="code_text ct2 ct3">
-            ez-docs \documents\certificate.md  \documents\students.csv NAME_AGE_GRADE --flag=1
+          <p>
+            The first step tu use the package is to have a markdown template
+            with the correct format, that will receive the data from the .csv or .xls. Your template should look something
+            like this:
+          </p>
+          <p class="code_text" id="ct_var">
+            #Certificate of Accomplishment <br>
+            ### <span style="color: #46c5eb">&lt&ltNAME&gt&gt</span> has successfully completed the course
+            <span style="color: #46c5eb">&lt&ltCOURSE&gt&gt</span>. <br><br>
+            Grade: <span style="color: #46c5eb">&lt&ltGRADE&gt&gt</span>
+          </p> 
+          <p>
+            The second step of the process is to have a database that its columns matches your
+            template keys. A quick example is:
+          </p>
+          <img src="images/database.png" alt="" class="img_database">
+          <p>
+            The final part is to go to your terminal and follow the "How To Use" step. Remember
+            to write the path to your template and database correctly and to write your markdown
+            keys separated with underline (_).
           </p>
           <p>
             If you want to know more about the package, check out the GitHub Repository
