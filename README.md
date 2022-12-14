@@ -27,6 +27,7 @@ So, we contribute to the Open Source community with ez-docs, which helps users t
 #### Bugs
 
 * Semicolon separator on .csv files not working.
+* Format .xlsx
 * key_pattern optionality.
 * flag=1/flag=2 always generating .md files.
 
@@ -42,12 +43,23 @@ Before starting, make sure you've met the following requirements:
 
 To install *ez-docs*, open an interactive shell and run:
 ```bash
-$ python<version> -m pip install ez-docs
+$ python3 -m pip install ez-docs
+```
+Then, to assure the faultless installation, run:
+```bash
+$ ez-docs --about
+```
+The terminal ought to print something like this:
+```
+=====About this project=====
+
+	This project was developed by Software Engineering students at the University of Brasilia - Campus Gama (UnB-FGA) - during the 2022.2 semester, in the course of Software Development Methods (SDM), under the guidance of prof. Dr. Carla Rocha Aguiar.
+    ...
 ```
 
 ## Using ez-docs
 
-To start using *ez-docs*, you'll need a markdown template, a database (.csv, .txt, xls) and a pattern of keys.
+To start using *ez-docs*, you'll need a markdown template, a database (.csv, .txt, .xls) and a pattern of keys.
 
 * directory_template: str - template.md
     
@@ -74,7 +86,7 @@ For example, for a template that has the keys "name" and "registration", the out
 
 With that, you may open an interactive shell and run:
 ```bash
-$ ez-docs <~/template.md> <~/database> <pattern_keys> --flag=1 or 2
+$ ez-docs <~/template.md> <~/database.csv> <pattern_keys> --flag=1 or 2
 ```
 
 ![](/docs/images/exampleofuse.gif)
