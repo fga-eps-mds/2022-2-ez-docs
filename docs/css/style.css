@@ -375,17 +375,24 @@ a:focus {
   font-family: 'Courier New', Courier, monospace;
   font-size: 13px;
   font-weight: bold;
-  border: 1px solid #060606;
   margin: auto;
   padding-top: 1%;
   height: 40px;
   width: 400px;
-  background-color: #b0b4f7;
+  background-color: #000000;
+  border: 3px solid #46c5eb;
+  color: #ffffff;
+
+}
+
+.img_database{
+  border: 3px solid #46c5eb;
+  margin-bottom: 25px;
 }
 
 .ct2{
   width: 500px;
-  height: 55px;
+  height: 60px;
   padding-top: 2%;
   padding-left: 2%;
   padding-right: 2%;
@@ -401,7 +408,7 @@ a:focus {
 }
 
 .git_button{
-  background-color: #b0b4f7;
+  background-color: #84c6da;
   border: 1px solid black;
   border-radius: 20px;
   height: 40px;
